@@ -4,6 +4,8 @@
   "description": "wrk benchmarking http node.js",
   "main": "index.js",
   "scripts": {
+    "eslint": "eslint",
+    "jscs": "jscs",
     "test": "echo 'No tests exist'",
     "postinstall": "make clean && make install"
   },
@@ -49,5 +51,10 @@
     "cli-table": "^0.3.1",
     "colors": "^1.1.2",
     "glob": "^5.0.14"
+  },
+  "devDependencies": {
+    "eslint": "^0.24.1",
+    "jscs": "^1.13.1",
+    "sinet-coding-conventions": "^1.31.0"
   }
 }
