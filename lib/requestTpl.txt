@@ -1,9 +1,6 @@
 request = function()
 path = [@path]
-wrk.headers["Content-Type"] = [@contentType]
-wrk.headers["X-Engine-Id"] = [@engineId]
-wrk.headers["X-Engine-Secret"] = [@engineSecret]
-wrk.headers["authorization"] = [@authorization]
-wrk.body = [@body]
+[@requestHeaders]
+wrk.body = "[@body]"
 return wrk.format([@method], path)
 end
