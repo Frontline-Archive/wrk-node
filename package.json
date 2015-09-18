@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint",
     "jscs": "jscs",
-    "test": "echo 'No tests exist'",
+    "test": "mocha",
     "postinstall": "make clean && make install"
   },
   "bin": {
