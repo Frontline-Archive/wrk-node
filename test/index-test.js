@@ -30,8 +30,6 @@ describe( 'index.js test', function () {
 		it( 'should return correct properties', function () {
 			indexFile.should.have.property( 'exec' );
 			( typeof indexFile.exec ).should.be.equal( 'function' );
-			indexFile.should.have.property( 'wrkCmd' );
-			( typeof indexFile.wrkCmd ).should.be.equal( 'function' );
 		} );
 	} );
 } );
