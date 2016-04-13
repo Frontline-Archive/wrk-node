@@ -4,6 +4,7 @@
   "description": "wrk benchmarking http node.js",
   "main": "index.js",
   "scripts": {
+    "lint": "npm run eslint -- ./ && npm run jscs -- --esnext ./",
     "eslint": "eslint",
     "jscs": "jscs",
     "test": "mocha",
@@ -14,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/School-Improvement-Network/wrk-node.git"
+    "url": "git+https://github.com/sinet/wrk-node.git"
   },
   "keywords": [
     "node",
@@ -43,9 +44,9 @@
   "author": "School Improvement Network",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/School-Improvement-Network/wrk-node/issues"
+    "url": "https://github.com/sinet/wrk-node/issues"
   },
-  "homepage": "https://github.com/School-Improvement-Network/wrk-node",
+  "homepage": "https://github.com/sinet/wrk-node",
   "dependencies": {
     "async": "^1.4.0",
     "bluebird": "^2.9.34",
@@ -54,11 +55,11 @@
     "glob": "^5.0.14"
   },
   "devDependencies": {
-    "eslint": "^0.24.1",
-    "jscs": "^1.13.1",
+    "@sinet/coding-conventions": "^2.1.1",
+    "eslint": "^1.10.3",
+    "jscs": "^2.11.0",
     "mocha": "^2.2.5",
     "should": "^7.0.2",
-    "sinet-coding-conventions": "^1.31.0",
     "sinon": "^1.15.4"
   }
 }
