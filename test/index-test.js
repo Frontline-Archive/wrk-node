@@ -3,11 +3,9 @@
 require( 'should' );
 
 describe( 'index.js test', function () {
-
 	describe( 'with correct config object', function () {
-
-		var indexFile;
-		var config = {
+		let indexFile;
+		const config = {
 			'server' : {
 				'host' : 'http://localhost',
 				'port' : 4000

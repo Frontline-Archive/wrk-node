@@ -3,11 +3,9 @@
 require( 'should' );
 
 describe( 'benchark class', function () {
-
 	describe( 'properties', function () {
-		var bm;
-		var Benchmark;
-		var config = {
+		let bm, Benchmark;
+		const config = {
 			'server' : {
 				'host' : 'http://localhost',
 				'port' : 4000
