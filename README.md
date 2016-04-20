@@ -9,8 +9,8 @@ Wrk node.js http benchmarking tool. A framework wrapper for wrk benchmarking. In
 ## Usage
 ```javascript
 'use strict';
-var wrkNode = require( 'wrk-node' );
-var config = {
+const wrkNode = require( 'wrk-node' );
+const config = {
   // This required
     'server' : {
         'host' : process.env.TEST_HOST || 'http://localhost',
@@ -42,7 +42,6 @@ wrkNode( config ).exec( function () {
 'use strict';
 
 module.exports = {
-
     'request' : {
         'path'   : '/api/v1/legacy/states',
         'method' : 'GET'
@@ -61,7 +60,6 @@ module.exports = {
             'min' : 20
         }
     }
-
 };
 ```
 
