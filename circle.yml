@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 5.9.1
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+
+    # Detect errors and potential problems
+    - npm run eslint -- ./
+    - npm run jscs -- --esnext ./
+
+    # Run available tests
+    - npm test
