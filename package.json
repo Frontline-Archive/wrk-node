@@ -1,7 +1,7 @@
 {
-  "name": "wrk-node",
-  "version": "2.1.0",
-  "description": "wrk benchmarking http node.js",
+  "name": "@sinet/wrk-node",
+  "version": "1.0.0",
+  "description": "SINET-ownder fork of wrk-node",
   "main": "index.js",
   "scripts": {
     "lint": "npm run eslint -- ./ && npm run jscs -- --esnext ./",
@@ -22,24 +22,6 @@
     "wrk",
     "http",
     "benchmarking"
-  ],
-  "maintainers": [
-    {
-      "name": "gideoanirex",
-      "email": "gideonrosales@gmail.com"
-    },
-    {
-      "name": "yamii",
-      "email": "miriamiglesia@gmail.com"
-    },
-    {
-      "name": "vjcagay",
-      "email": "vjcagay@gmail.com"
-    },
-    {
-      "name": "darbiol",
-      "email": "arbiol.daniel0727@gmail.com"
-    }
   ],
   "author": "School Improvement Network",
   "license": "MIT",
